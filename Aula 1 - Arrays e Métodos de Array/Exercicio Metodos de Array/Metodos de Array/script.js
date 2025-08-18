@@ -46,6 +46,7 @@ function executarSort() {
   const resultado = array.sort(function (a, b){
       return a - b;
   });
+
   document.getElementById('resultado-sort').textContent = resultado;
   const resultado2 = array2.sort().reverse();
   document.getElementById('resultado-sort2').textContent = resultado2;
@@ -62,7 +63,6 @@ function executarSplice() {
   const resultado = array;
   document.getElementById('resultado-splice').textContent = resultado;
 }
-
 
 function executarIndexOf() {
   const array = ['🍎', '🍌', '🍇'];
@@ -146,12 +146,3 @@ function executarEncadeamento() {
   const resultado = 'Resultado da operação encadeada';
   document.getElementById("resultado-encadeamento").textContent = resultado.join(', ') || 'Nenhum jogo encontrado';
 }
-
-
-// let nome = "Matheus";
-
-// const id = 1;
-
-// let nomes = ["Matheus", "Caio"]
-
-// const ordenar = (a, b) => a - b;
